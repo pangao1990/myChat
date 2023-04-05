@@ -1,55 +1,131 @@
-### 前言
+### 一句话介绍
 
-可能你没体验过 ChatGPT，但肯定听说过。苦于高高的围墙，无法便捷的使用 ChatGPT。那你就不能错过 **myChat** ，一款第三方 ChatGPT 原生客户端。基于 OpenAI 提供的 ChatGPT 同款 GPT系列模型，可达到与 ChatGPT 类似的效果，即开即用，不用魔法上网。
+myChat 是一款第三方 ChatGPT 客户端，基于 OpenAI 接口调用，支持 Windows 和 macOS 系统。
 
-### 搭后语
+### 运行前提条件
 
-哎，以上是我原本想好的台词。可不曾想 openAI 公司一层层的加码，先是**禁用**了我们国家访问 API，然后又将**18 美元**的免费额度降低到**5 美元**。最近又开始大规模封禁亚洲地区的账号，连注册通道都关闭了。还不知道啥时候可以缓解。。。
+- **魔法上网**。
+- **需要 sk 码**。本软件不提供也不保存 sk 码，用户需要自行 [注册账号](https://blog.pangao.vip/超详细注册OpenAI接口账号的教程/) ，获取 sk 码。
 
-所以吧，我又临时改变了软件用法，支持自定义 sk 码，同时支持输入代理 IP 和端口，以应对 openAI 的封闭。
+### 软件安装
 
-### 如何使用
+#### 下载软件
 
-##### 下载对应程序包
+在 https://github.com/pangao1990/myChat/releases 中下载对应系统的最新软件安装包。
 
-分别有 win 版，mac 的 M 芯片版，mac 的 Intel 版，在我的 github (https://github.com/pangao1990/myChat) 里可以下载对应版本。
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-1.png)
 
-![image](https://blog.pangao.vip/pic/myChat-第三方ChatGPT原生客户端，支持win和mac系统-1.png)
+#### Windows 安装步骤
 
-##### 输入 openAI 的 sk 码
+- 双击安装包，选择【下一步】
 
-原本想把我的 sk 码预装在程序中的，不过想想。万一我的 sk 码的额度用完了，那岂不是程序也用不了了。所以，这里就还是填写大家自己申请的 sk 码吧。
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-2.png)
 
-可以看我另外一篇博客， [超详细注册 OpenAI 接口账号的教程](https://blog.pangao.vip/超详细注册OpenAI接口账号的教程/) 获取 **OpenAI API sk 码** 。
+- 选择【安装】
 
-![image](https://blog.pangao.vip/pic/myChat-第三方ChatGPT原生客户端，支持win和mac系统-2.png)
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-3.png)
 
-##### 设置代理
+- 选择【完成】，即完成软件安装
 
-没错，原本是不需要魔法上网的，可惜在 3 月 2 号那天，openAI 把 API 也封锁了，现在国内是访问不了的。所以，想用这款软件，必须要使用魔法。如果是代理上网，这里需要填入代理 IP 和端口。
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-4.png)
 
-![image](https://blog.pangao.vip/pic/myChat-第三方ChatGPT原生客户端，支持win和mac系统-3.png)
+#### macOS 安装步骤
 
-![image](https://blog.pangao.vip/pic/myChat-第三方ChatGPT原生客户端，支持win和mac系统-4.png)
+- 双击安装包，将 myChat.app 拖入右边的 Applications 文件夹，即完成软件安装
 
-##### 新增聊天主题
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-5.png)
 
-这里可以分类设置聊天主题，ChatGPT 会根据不同的聊天主题，来给出不同的回答。
+### 简单使用
 
-![image](https://blog.pangao.vip/pic/myChat-第三方ChatGPT原生客户端，支持win和mac系统-5.png)
+- 双击桌面快捷方式，打开 myChat 软件。
 
-##### 测试
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-6.png)
 
-要不百度一下，我都不知道 ChatGPT 又在煞有介事的胡说八道。似乎并没有一位叫潘高的著名歌手。这应该是 ChatGPT 自己编的吧。
+- 首次使用，需要输入 **sk 码**。
 
-![image](https://blog.pangao.vip/pic/myChat-第三方ChatGPT原生客户端，支持win和mac系统-6.png)
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-7.png)
 
-![image](https://blog.pangao.vip/pic/myChat-第三方ChatGPT原生客户端，支持win和mac系统-7.png)
+- 【重要】打开魔法上网，设置全局代理。
+
+此时，便可使用 myChat 客户端与 ChatGPT 对话了。
+
+### 高级功能
+
+#### 新增聊天主题
+
+点击左上角的 **+号**，即可添加新的聊天主题。
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-8.png)
+
+- 聊天标题：仅为方便使用者标记分类，不会传递给 ChatGPT
+- 聊天主题：该主题信息会在每一次聊天过程中发送给 AI，请尽量详细描述
+- GPT 模型：支持 **gpt-4** 、 **gpt-4-32k** 、 **gpt-3.5-turbo** 、 **text-davinci-003** 等模型。当然了，gpt-4 模型需要 sk 码已经申请获批权限。建议一般情况下使用 gpt-3.5-turbo 模型，性价比最高。
+- 记忆消息个数：发送给 ChatGPT 的历史消息个数。选择【0】则表示每次都是独立会话，不会发送历史对话记录给 ChatGPT。选择【全部】则表示会将全部历史对话发送给 ChatGPT 作为参考。
+- 模型参数：也就是 ChatGPT 的 temperature 参数。数值越小，回复越精准。数值越大，回复越多元化。
+
+#### 主题广场
+
+本软件预设了很多可用的主题，免费给用户使用。例如：论文润色、模拟面试、担任导游、下五子棋、脱口秀演员、作曲家、心理医生、编写代码、虚拟女友等等。
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-9.png)
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-10.png)
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-11.png)
+
+### 注意事项
+
+如若出现魔法上网已开启，但仍然出现连接超时的情况，请手动设置代理 IP 和端口。
+
+报错信息如下：
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-12.png)
+
+左下角【更多设置】选择【设置代理】：
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-13.png)
+
+在魔法上网的软件中找到代理 IP 和端口信息，依次填入，确认保存。
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-14.png)
+
+### 软件部分截图
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-15.png)
+
+![image](https://pangao1990.gitee.io/pic/myChat——第三方ChatGPT客户端又双叒叕更新啦-16.png)
+
+### 历史版本
+
+##### V2.2.0
+
+- 新增主题广场，提供众多 prompt。
+
+##### V2.1.0
+
+- 新增代码高亮。
+- 修复 Windows 平台下无法自动获取代理信息的问题。
+
+##### V2.0.1
+
+- 修复由 urllib3 模块引起的 SSLEOFError 错误问题。
+
+##### V2.0.0
+
+- 新增 GPT 模型选择、参数调节。
+- 新增自动获取系统代理 IP 及端口。
+- 新增自动检测软件升级。
+- 修复对话内容无法复制的问题。
+- 优化数据库结构。
+
+##### V1.2.0
+
+- 初始版本。
 
 ---
 
 更多编程教学请关注公众号：**潘高陪你学编程**
 
-![image](https://blog.pangao.vip/pic/潘高陪你学编程.jpg)
+![image](https://pangao1990.gitee.io/pic/潘高陪你学编程.jpg)
 
 ---
