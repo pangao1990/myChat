@@ -4,7 +4,7 @@
 Author: 潘高
 LastEditors: 潘高
 Date: 2023-04-03 17:42:32
-LastEditTime: 2023-04-03 22:23:51
+LastEditTime: 2023-04-25 17:05:23
 Description: 生成 .iss exe安装包配置文件，需要用到 InnoSetup 软件。
 '''
 
@@ -22,6 +22,7 @@ appBlogs = Config.appBlogs  # 个人博客
 rootDir = os.path.dirname(pyappDir)
 buildDir = os.path.join(rootDir, 'build')
 logoPath = os.path.join(rootDir, 'pyapp', 'icon', 'logo.ico')
+appISSID = Config.appISSID    # 安装包唯一GUID
 
 
 # 获取配置文件内容
@@ -43,7 +44,7 @@ def getIss():
 ; 注: AppId的值为单独标识该应用程序。
 ; 不要为其他安装程序使用相同的AppId值。
 ; (若要生成新的 GUID，可在菜单中点击 "工具|生成 GUID"。)
-AppId={{97AF5204-0247-43E8-BEA5-22609B99FC0A}
+AppId={{''' + appISSID + '''}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -57,7 +58,7 @@ DisableProgramGroupPage=yes
 ; 移除以下行，以在管理安装模式下运行（为所有用户安装）。
 PrivilegesRequired=lowest
 OutputDir=''' + buildDir + '''
-OutputBaseFilename=''' + appName + '''_setup
+OutputBaseFilename=''' + appName + '''-V''' + appVersion + '''_Windows
 SetupIconFile=''' + logoPath + '''
 Compression=lzma
 SolidCompression=yes
@@ -92,5 +93,5 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 
 # 生成配置文件
 issDir = os.path.dirname(__file__)
-with open(os.path.join(issDir, 'InnoSetup.iss'), 'w+', encoding='gb2312') as f:
+with open(os.path.join(issDir, 'InnoSetup.iss'), 'w+', encoding='utf-8') as f:
     f.write(getIss())

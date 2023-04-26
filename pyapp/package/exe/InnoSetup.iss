@@ -1,19 +1,20 @@
-; ½Å±¾ÓÉ Inno Setup ½Å±¾Ïòµ¼ Éú³É£¡
-; ÓĞ¹Ø´´½¨ Inno Setup ½Å±¾ÎÄ¼şµÄÏêÏ¸×ÊÁÏÇë²éÔÄ°ïÖúÎÄµµ£¡
+
+; è„šæœ¬ç”± Inno Setup è„šæœ¬å‘å¯¼ ç”Ÿæˆï¼
+; æœ‰å…³åˆ›å»º Inno Setup è„šæœ¬æ–‡ä»¶çš„è¯¦ç»†èµ„æ–™è¯·æŸ¥é˜…å¸®åŠ©æ–‡æ¡£ï¼
 
 #define MyAppName "myChat"
-#define MyAppVersion "1.0.0"
-#define MyAppPublisher "ÅË¸ß"
-#define MyAppURL "https://blog.pangao.vip/"
+#define MyAppVersion "2.2.2"
+#define MyAppPublisher "PanGao"
+#define MyAppURL "http://blog.pangao.vip"
 #define MyAppExeName "myChat.exe"
-#define MyAppAssocName MyAppName + " ÎÄ¼ş"
+#define MyAppAssocName MyAppName + " æ–‡ä»¶"
 #define MyAppAssocExt ".myp"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
 
 [Setup]
-; ×¢: AppIdµÄÖµÎªµ¥¶À±êÊ¶¸ÃÓ¦ÓÃ³ÌĞò¡£
-; ²»ÒªÎªÆäËû°²×°³ÌĞòÊ¹ÓÃÏàÍ¬µÄAppIdÖµ¡£
-; (ÈôÒªÉú³ÉĞÂµÄ GUID£¬¿ÉÔÚ²Ëµ¥ÖĞµã»÷ "¹¤¾ß|Éú³É GUID"¡£)
+; æ³¨: AppIdçš„å€¼ä¸ºå•ç‹¬æ ‡è¯†è¯¥åº”ç”¨ç¨‹åºã€‚
+; ä¸è¦ä¸ºå…¶ä»–å®‰è£…ç¨‹åºä½¿ç”¨ç›¸åŒçš„AppIdå€¼ã€‚
+; (è‹¥è¦ç”Ÿæˆæ–°çš„ GUIDï¼Œå¯åœ¨èœå•ä¸­ç‚¹å‡» "å·¥å…·|ç”Ÿæˆ GUID"ã€‚)
 AppId={{97AF5204-0247-43E8-BEA5-22609B99FC0A}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
@@ -25,10 +26,10 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
-; ÒÆ³ıÒÔÏÂĞĞ£¬ÒÔÔÚ¹ÜÀí°²×°Ä£Ê½ÏÂÔËĞĞ£¨ÎªËùÓĞÓÃ»§°²×°£©¡£
+; ç§»é™¤ä»¥ä¸‹è¡Œï¼Œä»¥åœ¨ç®¡ç†å®‰è£…æ¨¡å¼ä¸‹è¿è¡Œï¼ˆä¸ºæ‰€æœ‰ç”¨æˆ·å®‰è£…ï¼‰ã€‚
 PrivilegesRequired=lowest
-OutputDir=\\Mac\Home\Desktop
-OutputBaseFilename=myChat_setup
+OutputDir=C:\pywebview\myChat\build
+OutputBaseFilename=myChat-V2.2.2_Windows
 SetupIconFile=C:\pywebview\myChat\pyapp\icon\logo.ico
 Compression=lzma
 SolidCompression=yes
@@ -42,7 +43,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\pywebview\myChat\build\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-; ×¢Òâ: ²»ÒªÔÚÈÎºÎ¹²ÏíÏµÍ³ÎÄ¼şÉÏÊ¹ÓÃ¡°Flags: ignoreversion¡±
+; æ³¨æ„: ä¸è¦åœ¨ä»»ä½•å…±äº«ç³»ç»Ÿæ–‡ä»¶ä¸Šä½¿ç”¨â€œFlags: ignoreversionâ€
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey}"; ValueData: ""; Flags: uninsdeletevalue

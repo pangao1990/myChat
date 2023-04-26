@@ -5,7 +5,7 @@ FilePath: /myChat/pyapp/update/update.py
 Author: 潘高
 LastEditors: 潘高
 Date: 2023-03-23 21:24:30
-LastEditTime: 2023-04-12 08:50:17
+LastEditTime: 2023-04-26 15:49:39
 Description: 程序升级
 usage: 运行前，请确保本机已经搭建Python3开发环境，且已经安装 requests 模块。
         详细教程请移步至 https://blog.pangao.vip/Python环境搭建及模块安装/
@@ -98,18 +98,12 @@ class AppUpdate:
         '''获取程序包'''
         # 判断更新哪个系统版本
         appExt = '.exe'
-        appCPU = 'Windows'
-        if Config.appSystem == 'Darwin':
+        if Config.appIsMacOS:
             appExt = '.dmg'
-            if self.IfMacAppleM():
-                appCPU = 'M'
-            else:
-                appCPU = 'Core'
         for assets in assetsList:
             name = assets['name']
             ext = os.path.splitext(name)[-1]
-            cpu = (os.path.splitext(name)[-2]).split('_')[-1]
-            if ext == appExt and cpu == appCPU:
+            if ext == appExt:
                 size = assets['size']
                 url = assets['browser_download_url']
                 downloadPath = os.path.join(Config.downloadDir, name)
@@ -170,13 +164,3 @@ class AppUpdate:
         elif bytes >= 1024 * 1024 * 1024 * 1024 * 1024 * 1024 and bytes < 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024:
             bytes = str(round(bytes / 1024 / 1024 / 1024 / 1024 / 1024 / 1024, 2)) + ' EB'    # 艾字节
         return bytes
-
-    def IfMacAppleM(self):
-        '''判断是苹果M芯片还是Intel芯片'''
-        p = subprocess.Popen('sysctl machdep.cpu.brand_string', shell=True, stdout=subprocess.PIPE)
-        out, err = p.communicate()
-        res = out.decode('UTF-8')
-        if res.find('Apple M') > -1:
-            return True
-        else:
-            return False

@@ -22,7 +22,7 @@ icoPath = os.path.join('..', 'icon', 'logo.icns')
 appName = 'myChat'
 
 # 版本号
-version = 'V2.2.2'
+version = 'V2.3.0'
 
 # 对Python字节码加密
 block_cipher = pyi_crypto.PyiBlockCipher(key='0123456789123456')
