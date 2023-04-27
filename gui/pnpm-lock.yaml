@@ -136,10 +136,10 @@ packages:
     version: 1.2.6
     dev: false
 
-  registry.npmmirror.com/@floating-ui/dom@1.2.6:
-    resolution: {integrity: sha512-02vxFDuvuVPs22iJICacezYJyf7zwwOCWkPNkWNBr1U0Qt1cKFYzWvxts0AmqcOQGwt/3KJWcWIgtbUU38keyw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@floating-ui/dom/-/dom-1.2.6.tgz}
+  registry.npmmirror.com/@floating-ui/dom@1.2.7:
+    resolution: {integrity: sha512-DyqylONj1ZaBnzj+uBnVfzdjjCkFCL2aA9ESHLyUOGSqb03RpbLMImP1ekIQXYs4KLk9jAjJfZAU8hXfWSahEg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@floating-ui/dom/-/dom-1.2.7.tgz}
     name: '@floating-ui/dom'
-    version: 1.2.6
+    version: 1.2.7
     dependencies:
       '@floating-ui/core': registry.npmmirror.com/@floating-ui/core@1.2.6
     dev: false
@@ -642,7 +642,7 @@ packages:
     dependencies:
       '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor@3.6.0
       '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue@2.1.0(vue@3.2.25)
-      '@floating-ui/dom': registry.npmmirror.com/@floating-ui/dom@1.2.6
+      '@floating-ui/dom': registry.npmmirror.com/@floating-ui/dom@1.2.7
       '@popperjs/core': registry.npmmirror.com/@sxzz/popperjs-es@2.11.7
       '@types/lodash': registry.npmmirror.com/@types/lodash@4.14.194
       '@types/lodash-es': registry.npmmirror.com/@types/lodash-es@4.17.7

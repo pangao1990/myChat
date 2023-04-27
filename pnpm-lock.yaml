@@ -8,7 +8,7 @@ optionalDependencies:
 devDependencies:
   nodemon:
     specifier: ^2.0.20
-    version: registry.npmmirror.com/nodemon@2.0.22
+    version: registry.npmmirror.com/nodemon@2.0.20
   npm-run-all:
     specifier: ^4.1.5
     version: registry.npmmirror.com/npm-run-all@4.1.5
@@ -946,10 +946,10 @@ packages:
     name: nice-try
     version: 1.0.5
 
-  registry.npmmirror.com/nodemon@2.0.22:
-    resolution: {integrity: sha512-B8YqaKMmyuCO7BowF1Z1/mkPqLk6cs/l63Ojtd6otKjMx47Dq1utxfRxcavH1I7VSaL8n5BUaoutadnsX3AAVQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nodemon/-/nodemon-2.0.22.tgz}
+  registry.npmmirror.com/nodemon@2.0.20:
+    resolution: {integrity: sha512-Km2mWHKKY5GzRg6i1j5OxOHQtuvVsgskLfigG25yTtbyfRGn/GNvIbRyOf1PSCKJ2aT/58TiuUsuOU5UToVViw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nodemon/-/nodemon-2.0.20.tgz}
     name: nodemon
-    version: 2.0.22
+    version: 2.0.20
     engines: {node: '>=8.10.0'}
     hasBin: true
     dependencies:
