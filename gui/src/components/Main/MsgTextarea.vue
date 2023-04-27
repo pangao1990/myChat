@@ -73,6 +73,9 @@ const onKeydown = (event) => {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-all;
+  /* 修复 Mac Intel 无法选中的问题 */
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 
