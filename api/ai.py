@@ -4,7 +4,7 @@
 Author: 潘高
 LastEditors: 潘高
 Date: 2023-03-10 14:07:59
-LastEditTime: 2023-04-17 14:57:09
+LastEditTime: 2023-05-04 10:26:22
 Description: 调用OpenAI接口
 '''
 
@@ -25,6 +25,7 @@ class AI:
     temperature = ''    # 默认为1，取值在0-2之间。像1.8这样的高值将使输出更加随机，而像0.2这样的低值将使其更加集中和确定性。
 
     def getChat(self, messages):
+        '''获取AI返回信息'''
 
         # 如果手动设置了代理IP和端口，则启用手动设置代理信息
         orm = ORM()    # 操作数据库类
@@ -47,8 +48,15 @@ class AI:
                     os.environ["HTTP_PROXY"] = f'http://{proxyHTTP}'
                     os.environ["HTTPS_PROXY"] = f'http://{proxyHTTP}'
 
-        '''获取AI返回信息'''
+        # 设置 api_base
+        apiBase = orm.getStorageVar('apiBase')
+        if apiBase == '':
+            apiBase = 'api.openai.com'
+        openai.api_base = f'https://{apiBase}/v1'
+
+        # 设置 sk 码
         openai.api_key = AI.skOpenAI
+
         # 访问OpenAI接口
         response = openai.ChatCompletion.create(model=AI.model, temperature=AI.temperature, messages=messages, request_timeout=(10, 290))
         '''

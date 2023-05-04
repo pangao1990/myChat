@@ -29,6 +29,12 @@
             </el-icon>
             设置代理
           </el-dropdown-item>
+          <el-dropdown-item divided @click="state.visibleAPIBaseDialog = true">
+            <el-icon>
+              <ele-Money />
+            </el-icon>
+            自定义API地址
+          </el-dropdown-item>
           <el-dropdown-item divided @click="onSet">
             <el-icon>
               <ele-Cpu />
@@ -42,6 +48,9 @@
     <!-- 设置代理 -->
     <ProxyDialog :visible="state.visibleProxyDialog" @close="onCloseProxyDialog" />
 
+    <!-- 自定义API地址 -->
+    <APIBaseDialog :visible="state.visibleAPIBaseDialog" @close="onCloseAPIBaseDialog" />
+
     <!-- 主题广场 -->
     <ThemeStore />
 
@@ -51,6 +60,7 @@
 <script setup>
 import { ElMessageBox } from 'element-plus'
 import ProxyDialog from '@/components/Aside/MoreTools/ProxyDialog.vue'
+import APIBaseDialog from '@/components/Aside/MoreTools/APIBaseDialog.vue'
 import BtnUpdate from '@/components/Aside/MoreTools/BtnUpdate.vue'
 import ThemeStore from '@/components/Aside/MoreTools/ThemeStore.vue'
 import { reactive } from 'vue'
@@ -58,7 +68,8 @@ import { useStoreAside } from '@/stores/aside'
 
 const storeAside = useStoreAside()
 const state = reactive({
-  visibleProxyDialog: false
+  visibleProxyDialog: false,
+  visibleAPIBaseDialog: false
 })
 
 const onSet = async () => {
@@ -84,9 +95,12 @@ const onCloseProxyDialog = (visible) => {
   state.visibleProxyDialog = visible
 }
 
+const onCloseAPIBaseDialog = (visible) => {
+  state.visibleAPIBaseDialog = visible
+}
+
 // 主题商店
 const onOpenStore = () => {
-  // ElMessage({ type: 'success', message: '主题商店功能正在加紧开发中，敬请期待', grouping: true })
   storeAside.setVisibleThemeStore(!storeAside.visibleThemeStore)
 }
 </script>
