@@ -4,7 +4,7 @@
 Author: 潘高
 LastEditors: 潘高
 Date: 2023-03-10 14:07:59
-LastEditTime: 2023-05-04 10:26:22
+LastEditTime: 2023-06-20 10:03:54
 Description: 调用OpenAI接口
 '''
 
@@ -51,8 +51,8 @@ class AI:
         # 设置 api_base
         apiBase = orm.getStorageVar('apiBase')
         if apiBase == '':
-            apiBase = 'api.openai.com'
-        openai.api_base = f'https://{apiBase}/v1'
+            apiBase = 'https://api.openai.com/v1'
+        openai.api_base = apiBase
 
         # 设置 sk 码
         openai.api_key = AI.skOpenAI

@@ -8,7 +8,7 @@ optionalDependencies:
 devDependencies:
   nodemon:
     specifier: ^2.0.20
-    version: registry.npmmirror.com/nodemon@2.0.20
+    version: registry.npmmirror.com/nodemon@2.0.22
   npm-run-all:
     specifier: ^4.1.5
     version: registry.npmmirror.com/npm-run-all@4.1.5
@@ -147,7 +147,7 @@ packages:
     version: 1.0.2
     dependencies:
       function-bind: registry.npmmirror.com/function-bind@1.1.1
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
     dev: true
 
   registry.npmmirror.com/chalk@2.4.2:
@@ -289,7 +289,7 @@ packages:
       es-set-tostringtag: registry.npmmirror.com/es-set-tostringtag@2.0.1
       es-to-primitive: registry.npmmirror.com/es-to-primitive@1.2.1
       function.prototype.name: registry.npmmirror.com/function.prototype.name@1.1.5
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
       get-symbol-description: registry.npmmirror.com/get-symbol-description@1.0.0
       globalthis: registry.npmmirror.com/globalthis@1.0.3
       gopd: registry.npmmirror.com/gopd@1.0.1
@@ -325,7 +325,7 @@ packages:
     version: 2.0.1
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
       has: registry.npmmirror.com/has@1.0.3
       has-tostringtag: registry.npmmirror.com/has-tostringtag@1.0.0
     dev: true
@@ -467,13 +467,14 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/get-intrinsic@1.2.0:
-    resolution: {integrity: sha512-L049y6nFOuom5wGyRc3/gdTLO94dySVKRACj1RmJZBQXlbTMhtNIgkWkUHq+jYmZvKf14EW1EoJnnjbmoHij0Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-intrinsic/-/get-intrinsic-1.2.0.tgz}
+  registry.npmmirror.com/get-intrinsic@1.2.1:
+    resolution: {integrity: sha512-2DcsyfABl+gVHEfCOaTrWgyt+tb6MSEGmKq+kI5HwLbIYgjgmMcV8KQ41uaKz1xxUcn9tJtgFbQUEVcEbd0FYw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-intrinsic/-/get-intrinsic-1.2.1.tgz}
     name: get-intrinsic
-    version: 1.2.0
+    version: 1.2.1
     dependencies:
       function-bind: registry.npmmirror.com/function-bind@1.1.1
       has: registry.npmmirror.com/has@1.0.3
+      has-proto: registry.npmmirror.com/has-proto@1.0.1
       has-symbols: registry.npmmirror.com/has-symbols@1.0.3
     dev: true
 
@@ -494,7 +495,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: registry.npmmirror.com/call-bind@1.0.2
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
     dev: true
 
   registry.npmmirror.com/glob-parent@5.1.2:
@@ -533,7 +534,7 @@ packages:
     name: gopd
     version: 1.0.1
     dependencies:
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
     dev: true
 
   registry.npmmirror.com/graceful-fs@4.2.11:
@@ -560,7 +561,7 @@ packages:
     name: has-property-descriptors
     version: 1.0.0
     dependencies:
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
     dev: true
 
   registry.npmmirror.com/has-proto@1.0.1:
@@ -645,7 +646,7 @@ packages:
     version: 1.0.5
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
       has: registry.npmmirror.com/has@1.0.3
       side-channel: registry.npmmirror.com/side-channel@1.0.4
     dev: true
@@ -663,7 +664,7 @@ packages:
     version: 3.0.2
     dependencies:
       call-bind: registry.npmmirror.com/call-bind@1.0.2
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
       is-typed-array: registry.npmmirror.com/is-typed-array@1.1.10
     dev: true
 
@@ -707,10 +708,10 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  registry.npmmirror.com/is-core-module@2.12.0:
-    resolution: {integrity: sha512-RECHCBCd/viahWmwj6enj19sKbHfJrddi/6cBDsNTKbNq0f7VeaUkBo60BqzvPqo/W54ChS62Z5qyun7cfOMqQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-core-module/-/is-core-module-2.12.0.tgz}
+  registry.npmmirror.com/is-core-module@2.12.1:
+    resolution: {integrity: sha512-Q4ZuBAe2FUsKtyQJoQHlvP8OvBERxO3jEmy1I7hcRXcJBGGHFh/aJBswbXuS9sgrDH2QUO8ilkwNPHvHMd8clg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-core-module/-/is-core-module-2.12.1.tgz}
     name: is-core-module
-    version: 2.12.0
+    version: 2.12.1
     dependencies:
       has: registry.npmmirror.com/has@1.0.3
     dev: true
@@ -946,10 +947,10 @@ packages:
     name: nice-try
     version: 1.0.5
 
-  registry.npmmirror.com/nodemon@2.0.20:
-    resolution: {integrity: sha512-Km2mWHKKY5GzRg6i1j5OxOHQtuvVsgskLfigG25yTtbyfRGn/GNvIbRyOf1PSCKJ2aT/58TiuUsuOU5UToVViw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nodemon/-/nodemon-2.0.20.tgz}
+  registry.npmmirror.com/nodemon@2.0.22:
+    resolution: {integrity: sha512-B8YqaKMmyuCO7BowF1Z1/mkPqLk6cs/l63Ojtd6otKjMx47Dq1utxfRxcavH1I7VSaL8n5BUaoutadnsX3AAVQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nodemon/-/nodemon-2.0.22.tgz}
     name: nodemon
-    version: 2.0.20
+    version: 2.0.22
     engines: {node: '>=8.10.0'}
     hasBin: true
     dependencies:
@@ -1217,7 +1218,7 @@ packages:
     version: 1.22.2
     hasBin: true
     dependencies:
-      is-core-module: registry.npmmirror.com/is-core-module@2.12.0
+      is-core-module: registry.npmmirror.com/is-core-module@2.12.1
       path-parse: registry.npmmirror.com/path-parse@1.0.7
       supports-preserve-symlinks-flag: registry.npmmirror.com/supports-preserve-symlinks-flag@1.0.0
     dev: true
@@ -1235,7 +1236,7 @@ packages:
     version: 1.0.0
     dependencies:
       call-bind: registry.npmmirror.com/call-bind@1.0.2
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
       is-regex: registry.npmmirror.com/is-regex@1.1.4
     dev: true
 
@@ -1301,7 +1302,7 @@ packages:
     version: 1.0.4
     dependencies:
       call-bind: registry.npmmirror.com/call-bind@1.0.2
-      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.0
+      get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
       object-inspect: registry.npmmirror.com/object-inspect@1.12.3
     dev: true
 
