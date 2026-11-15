@@ -1,5 +1,7 @@
 ### 一句话介绍
 
+bash grab.sh  # fetch runtime deps
+
 myChat 是一款第三方 ChatGPT 客户端，基于 OpenAI 接口调用，支持 Windows 和 macOS 系统。
 
 ### 运行前提条件
