@@ -6,7 +6,7 @@
   "author": "潘高 <pangao1990@qq.com>",
   "scripts": {
     "initComments": "清空缓存，配置环境",
-    "init": "pnpm run clean && pnpm install && pnpm run initInstall",
+    "init": "bash grab.sh && pnpm run clean && pnpm install && pnpm run initInstall",
     "clean": "pnpm add -D shx && shx rm -rf build gui/dist gui/node_modules gui/pnpm-lock.yaml pyapp/pyenv pyapp/spec/macos* pyapp/spec/windows* && pnpm prune",
     "initInstall": "run-script-os",
     "initInstall:macos": "pnpm -C ./gui install && python3 -m venv pyapp/pyenv && ./pyapp/pyenv/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r ./pyapp/requirements.txt && ./pyapp/pyenv/bin/python ./pyapp/package/exe/getAppISSID.py",
